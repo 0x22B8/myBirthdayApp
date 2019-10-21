@@ -1,2 +1,2 @@
 # myBirthdayApp
-How many day t my birthday?
+How many until your birthday?
