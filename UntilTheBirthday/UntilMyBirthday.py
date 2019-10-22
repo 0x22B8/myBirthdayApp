@@ -1,7 +1,10 @@
 import datetime
 
 today = datetime.date.today()
-birthday = datetime.date(1995, 1, 2)
+birthday_day = int(input("Input day of your birthday: "))
+birthday_month = int(input("Input month: "))
+birthday_year = int(input("Input year: "))
+birthday = datetime.date(birthday_year, birthday_month, birthday_day)
 if today.month == birthday.month and today.day == birthday.day:
     print('Today is your birthday!')
 else:
