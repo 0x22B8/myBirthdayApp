@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .Release.Name }}-pod
+  labels:
+    app: app
+spec:
+  containers:
+    - name: {{ .Release.Name }}-container
+      image: 0x22b8/untilmybirthday:latest
+      ports:
+        - containerPort: 80
