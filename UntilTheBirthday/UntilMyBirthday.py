@@ -8,9 +8,9 @@ birthday_year = int(sys.argv[3])
 
 try:
     if delta.deltaCounting(birthday_day, birthday_month) == 0:
-        print("♥♥♥♥♥♥♥♥♥♥♥♥♥♥")
-        print("♥Today is your Birthday! ♥")
-        print("♥♥♥♥♥♥♥♥♥♥♥♥♥♥")
+        print("♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥")
+        print("♥ Today is your Birthday! ♥")
+        print("♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥")
     else:
         print("Until your birthday: ", delta.deltaCounting(birthday_day, birthday_month), " day(s)!")
 except ValueError:

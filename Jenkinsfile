@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile UntilTheBirthday/UntilMyBirthday.py'
+                sh 'python -m py_compile UntilTheBirthday/UntilMyBirthday.py UntilTheBirthday/delta.py'
             }
         }
         stage('Test') {
@@ -18,7 +18,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'py.test --verbose --junit-xml test-reports/results.xml UntilTheBirthday/Test.py'
+                sh 'py.test --verbose --junit-xml test-reports/results.xml UntilTheBirthday/test_untilMyBirthday.py'
             }
             post {
                 always {
